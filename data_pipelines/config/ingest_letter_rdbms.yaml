@@ -1,0 +1,2 @@
+source: ../operational_rdbms/data/rdbms/letter_rdbms.csv
+destination: ../data_lake/landing/pqrs/letter/{}.csv
