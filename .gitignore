@@ -1,4 +1,5 @@
 .DS_Store
+operational_rdbms/data/rdbms/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
