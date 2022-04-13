@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import pandas as pd
 
 
@@ -22,9 +24,14 @@ def simulate_step(data_for_ingestion_path, rdbms_path):
 
     data_to_append = data.loc[init_index:end_index, :]
 
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
+    data_to_append = data_to_append.assign(last_modified=now)
+
     print(data_to_append)
+    print()
 
     rdbms = pd.concat([rdbms, data_to_append])
+
     rdbms.to_csv(rdbms_path, index=False)
 
 
