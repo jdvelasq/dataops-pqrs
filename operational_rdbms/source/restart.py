@@ -66,7 +66,7 @@ def make_rdbms(historical_data, filename):
 
     historical_data = historical_data[historical_data.index < 533]
 
-    now = datetime.now().strftime("%Y/%m/%d %H:%M:%S.%f")
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
     historical_data = historical_data.assign(last_modified=now)
     historical_data.to_csv(filename, index=False)
 
