@@ -1,5 +1,7 @@
 .DS_Store
 operational_rdbms/data/rdbms/
+data_lake/landing/
+data_lake/raw/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
