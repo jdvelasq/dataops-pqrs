@@ -3,7 +3,7 @@ init:
 	rm -rf landing
 	mkdir landing
 	mkdir landing/pqrs
-	mkdir landing/pqrs/leetter
+	mkdir landing/pqrs/letter
 	mkdir landing/pqrs/web
 	
 	# --< Raw Zone >---------------------------------------
