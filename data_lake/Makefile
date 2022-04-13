@@ -13,6 +13,10 @@ init:
 	mkdir raw/pqrs/leetter
 	mkdir raw/pqrs/web
 
+	# --< Cleansed Zone >----------------------------------
+	rm -rf cleansed
+	mkdir cleansed
+	mkdir cleansed/pqrs
 
 	
 	
